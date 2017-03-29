@@ -1,0 +1,434 @@
+
+html, body{
+ 	padding: 0;
+ 	margin: 0;
+}
+
+#About h1 , #Portfolio h1{
+	color: orange;
+	
+}
+
+
+/*============================Clearfix=====================*/
+
+#SkillDivContainer::after,#About::after, #ExpContainer::after, .Clearfix::after, form::after{
+    content: "";
+  	display: table;
+  	clear: both;
+}
+
+/*============================NavBar=======================*/
+nav {
+	background: black;
+	padding: 10px;
+	width:100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
+    opacity: 0.7;
+}
+nav li {
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: none;
+	margin-left: 65px;
+	color: white;
+	text-align: center;
+}
+
+/*============================Sections=======================*/
+
+#Skills, #Experience, #Portfolio, #KeepTouch{
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 4%;
+	padding-bottom: 2%;
+}
+
+#Home{
+  max-width: 100%; 	
+  height: auto;
+  background-color: black;
+}
+
+#Home h1{
+  color: white;
+  font-size: 2vw;
+  text-shadow: 1px 1px 5px white;
+}
+
+#TextDiv .animatedText{
+	animation: fade 2s ease-in;
+	
+}
+
+@keyframes fade{
+	from{
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+
+}
+
+#TextDiv {
+	position: absolute;
+	top: 80px;
+	left: 80px;
+	padding: 10px; 
+}
+
+/*--------------- Section About--------------------------*/
+
+#About{
+	box-sizing: border-box;
+	width: 100%; 	
+    height: 835px;
+    background-color: black;
+	color: white;
+	padding: 3%;
+	padding-top: 200px;
+	perspective: 1000px;
+}
+
+#About img{
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 2%;
+	transform: rotateY(50deg);
+}
+/*--------------- Section Skills--------------------------*/
+
+#SkillDivContainer{
+	margin-bottom: 5%;
+	
+}
+
+#SkillDiagram1, #SkillDiagram2, #SkillDiagram3{
+    float: left;
+	margin: 3% 0 3% 8%;
+    width: 200px; height: 200px;
+    text-align: center;
+    border-radius: 200px;
+}
+
+#SkillDiagram1{
+	background: #ECF5E4;
+    font: 25px/200px Times, serif;
+    border: 24px solid #1560d8;
+    border-right: 24px solid #5177b5;
+
+}
+
+#SkillDiagram2{
+	background: #ECF5E4;
+    font: 25px/200px Times, serif;
+    border: 24px solid #c10707;
+    border-right: 24px solid #d84e4e;
+    border-top: linear-gradient(to right, red 30%, white 0);
+}
+
+#SkillDiagram3{
+	background: #ECF5E4;
+    font: 25px/200px Times, serif;
+    border: 24px solid #95CD8B;
+    border-right: 24px solid #D0E6BB;
+    border-top: 24px solid #D0E6BB;
+}
+#SkillsPrArcticle{
+	width: 50%;
+	display: inline-block;
+}
+
+#SkBarContainer{
+	display: inline-block;
+}
+
+#SkBarHTML, #SkBarJS, #SkBarAngular, #SkBarBootstrap{
+	width: 400px;
+    height: 20px;
+    border: 1px inset ;
+    margin: 6% 5% 1% 35%;
+}
+
+#SkBarHTML{
+	background: linear-gradient(to right, orange 85%, grey 0);
+}
+
+#SkBarJS{
+	background: linear-gradient(to right, orange 65%, grey 0);
+}
+
+#SkBarAngular{
+	background: linear-gradient(to right, orange 55%, grey 0);
+}
+
+#SkBarBootstrap{
+	background: linear-gradient(to right, orange 75%, grey 0);
+}
+
+/*------------------------------Experience-----------------------------*/
+#Experience{
+	background: #f8f8f8;
+}
+
+#Experience img{
+	float: left;
+	margin-right: 3%;
+}
+
+#ExpMehanics, #ExpPlane, #ExpCar, #ExpBall{
+	position: relative;
+	width: 45%;
+	margin: 2% 2%;
+
+}
+#ExpMehanics, #ExpPlane, #ExpCar, #ExpBall{
+	float: left;
+}
+
+#ExpMehIconDiv, #ExpPlaneIconDiv, #ExpCarIconDiv, #ExpBallIconDiv{
+	display: inline-block;
+}
+#ExpMehTextDiv, #ExpPlaneTextDiv, #ExpCarTextDiv, #ExpBallTextDiv{
+	display: inline-block;
+	position: absolute;
+	top: 2px;
+}
+
+
+/*------------------------------Portfolio-----------------------------*/
+
+#Portfolio{
+	background: black;
+	overflow: hidden;
+}
+
+#Portfolio p{ color: #858585 }
+
+#Portfolio .responsive{
+	float: left;
+	margin: 20px;
+ 	width: 29%;
+}
+
+#Portfolio img{
+	border: 1px solid black;
+}
+
+#Portfolio img:hover{
+    border: 1px solid white;
+}
+
+/*=====================KeepTouch================*/
+
+#KeepTouch{
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#Inputs{
+	float: left;
+}
+#Inputs label{
+	margin: 5px
+}
+
+#Inputs input{
+	margin: 0px 10px 20px;
+	width: 250px;
+	height: 26px;
+}
+
+#AreaSub {
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+
+}
+
+#AreaSub input{
+	display: block;
+	width: 100px;
+	height: 25px;
+}
+
+#AreaSub textarea{
+	margin-bottom: 10px;
+	width: 98%;
+}
+address{
+	float: right;
+	width: 30%;
+}
+
+
+@media only screen and (max-width: 1628px){
+
+	#Inputs input{
+		width: auto;
+	}
+		
+	#AreaSub{
+		float: none;
+		width: 95%;
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+	address{
+		float: none;
+		display: inline;
+	}
+}
+
+@media only screen and (max-width: 1341px){
+	
+	#SkBarHTML, #SkBarJS, #SkBarAngular, #SkBarBootstrap{
+		margin: 6% 5% 1% 0%;
+	}
+
+	#ExpMehanics, #ExpPlane, #ExpCar, #ExpBall{
+		float: none;
+	}
+	#ExpMehTextDiv, #ExpPlaneTextDiv, #ExpCarTextDiv, #ExpBallTextDiv{
+		width: 90%;
+	}
+
+	#Portfolio .responsive{
+		margin: 5px;
+		width: 48%;
+	}
+	nav {
+		padding: 1px;
+	}
+
+	#About img{
+		transform: none;
+	}
+}
+
+@media only screen and (max-width: 900px){	
+
+	.burger-nav {
+		display: block;
+		height: 40px;
+		width: 100%;
+		background: url(images/burgerIcon_40.png) no-repeat 98% center;
+		margin-left: 0;
+	}
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		height: 0;
+	}
+
+	nav ul.open{
+		height: auto;
+	}
+
+	nav ul.close{height: 0;}
+
+	nav ul li{
+		display: block;
+		text-align: left;
+		padding: 10px;
+		border-top: 1px solid white;
+	}
+
+	nav ul li a{
+		width: 100%;
+	}
+
+	nav ul:last-child{
+		border-bottom: 1px solid white;
+	}
+}
+
+@media only screen and (max-width: 832px){
+
+	#Portfolio .responsive{
+		margin: 5px;
+		width: 45%;
+	}	
+
+}
+
+@media only screen and (max-width: 768px){
+	
+	
+	nav {
+		padding: 0;
+	}
+	
+	#About{
+		height: auto;
+	}
+	#SkillDiagram1, #SkillDiagram2, #SkillDiagram3{
+    	float: none;
+		margin: 3% auto;
+	}
+	#SkillsPrArcticle{
+		width: 100%;
+	}
+	#SkBarHTML, #SkBarJS, #SkBarAngular, #SkBarBootstrap{
+		margin: 3% auto;
+	}
+	#ExpMehanics, #ExpPlane, #ExpCar, #ExpBall{
+		float: none;
+	}
+	#ExpMehTextDiv, #ExpPlaneTextDiv, #ExpCarTextDiv, #ExpBallTextDiv{
+		width: 90%;
+	}
+	#Portfolio .responsive{
+		margin: 5px;
+		width: 30%;
+	}
+
+}
+
+@media only screen and (max-width: 719px){
+
+	#SkBarHTML, #SkBarJS, #SkBarAngular, #SkBarBootstrap{
+		margin: 3% 0;
+		width: 460%;
+	}	
+	#ExpMehanics,#ExpPlane, #ExpCar, #ExpBall{
+		width: 75%;
+		margin: 40px auto;
+	}
+
+	#ExpMehTextDiv,#ExpPlaneTextDiv, #ExpCarTextDiv, #ExpBallTextDiv{
+		position: relative;
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 414px){
+	
+	
+	#SkBarHTML, #SkBarJS, #SkBarAngular, #SkBarBootstrap{
+		margin: 3% 0;
+		width: 360%;
+	}
+	#ExpMehanics,#ExpPlane, #ExpCar, #ExpBall{
+		width: 75%;
+		margin: 40px auto;
+	}
+
+	#ExpMehTextDiv,#ExpPlaneTextDiv, #ExpCarTextDiv, #ExpBallTextDiv{
+		position: relative;
+		display: block;
+	}
+	#Portfolio .responsive{
+		margin: 5px;
+		width: 45%;
+	}
+}	
